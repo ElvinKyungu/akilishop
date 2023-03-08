@@ -1,13 +1,3 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-/**
- * copyright 2022 @codewithsadee 
- */
-
-
-
 
 
 /*-----------------------------------*\
@@ -83,7 +73,9 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
-
+.text-center{
+  text-align: center;
+}
 a { text-decoration: none; }
 
 li { list-style: none; }
@@ -417,8 +409,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   -o-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   z-index: 5;
-  -webkit-animation: slideInOut 10s ease-in-out infinite;
-          animation: slideInOut 10s ease-in-out infinite;
+  -webkit-animation: slideInOut 90s ease-in-out infinite;
+          animation: slideInOut 90s ease-in-out infinite;
 }
 
 @-webkit-keyframes slideInOut {
@@ -2163,6 +2155,13 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
+  .smartphone-hide{
+    visibility: hidden;
+    display: none;
+  }
+  .mieux-note{
+    display: none;
+  }
 }
 /**
  * responsive larger than 480px screen
@@ -2367,7 +2366,9 @@ footer {
   /**
    * #CATEGORY
    */
-
+.mieux-note{
+  display: block;
+}
   .category-item-container { gap: 30px; }
 
   .category-item { min-width: -webkit-calc(50% - 15px); min-width: calc(50% - 15px); }
@@ -2506,7 +2507,37 @@ footer {
 
   .banner-btn { --fs-11: 0.75rem; }
 
+ .slider-swiper {
+    width: 100%;
+    margin-bottom: 5rem;
+      height: 70vh !important;
+      display: flex;
+      justify-content: center;
+    }
 
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-position: center;
+    }
+    .slide1
+    {
+      background-image: url(../images/banner-1.jpg);
+    }
+    .slide2{
+      background-image: url(../images/banner-2.jpg);
+    }
+    .slide3{
+      background-image: url(../images/banner-3.jpg);
+    }
+    .slide4{
+      background-image: url(../images/mens-banner.jpg);
+      background-repeat: no-repeat;
+    }
 
   /**
    * #CATEGORY 
@@ -2515,7 +2546,10 @@ footer {
   .category-img-box { padding: 20px; }
 
 
-
+  .smartphone-hide{
+    visibility: visible;
+    display: unset;
+  }
   /**
    * #PRODUCT 
    */
