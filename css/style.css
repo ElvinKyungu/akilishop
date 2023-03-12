@@ -998,6 +998,7 @@ ol {
 .latest-product__item__pic img {
 	height: 110px;
 	width: 110px;
+	object-fit: cover;
 }
 
 .latest-product__item__text {
